@@ -3,7 +3,7 @@ html
     title Miniprojekt node
   body
     h1 Minibok 
-    from(action="/skapabok", method="POST")
+    form(action="/skapabok", method="POST")
       span.lable Titel
       input(type="text", name="titel") 
       span.lable Författare 
@@ -18,4 +18,4 @@ html
       input(type="text", name="förlag") 
       span.lable Info
       input(type="text", name="info") 
-      button Skapa bok
+      button Skapa bok 
