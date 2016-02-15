@@ -18,6 +18,10 @@ lagra som json
   betyg
 
 
+Template engine Jade.
 
+Express
+
+Nodemon
 
 
