@@ -14,120 +14,46 @@
                 "adsadm"
             ],
             "publisher": "adasdas",
-            "info": "adsada"
+            "info": "adsada",
+            "id": 0
         },
         {
-            "title": "harry",
+            "title": "Hanna",
             "author": [
-                "adam",
-                "addasd"
+                "hanna",
+                "adam"
             ],
             "year": "1010",
             "genre": [
-                "adam"
+                "äventyr"
             ],
             "format": [
-                "adsadm"
-            ],
-            "publisher": "adasdas",
-            "info": "adsada"
-        },
-        {
-            "title": "harry",
-            "author": [
-                "adam",
-                "addasd"
-            ],
-            "year": "1010",
-            "genre": [
-                "adam"
-            ],
-            "format": [
-                "adsadm"
-            ],
-            "publisher": "adasdas",
-            "info": "adsada"
-        },
-        {
-            "title": "harry",
-            "author": [
-                "adam",
-                "addasd"
-            ],
-            "year": "1010",
-            "genre": [
-                "adam"
-            ],
-            "format": [
-                "adsadm"
-            ],
-            "publisher": "adasdas",
-            "info": "adsada"
-        },
-        {
-            "title": "harry",
-            "author": [
-                "adam",
-                "addasd"
-            ],
-            "year": "1010",
-            "genre": [
-                "adam"
-            ],
-            "format": [
-                "adsadm"
-            ],
-            "publisher": "adasdas",
-            "info": "adsada"
-        },
-        {
-            "title": "harry",
-            "author": [
-                "adam",
-                "addasd"
-            ],
-            "year": "1010",
-            "genre": [
-                "adam"
-            ],
-            "format": [
-                "adsadm"
-            ],
-            "publisher": "adasdas",
-            "info": "adsada"
-        },
-        {
-            "title": "harry",
-            "author": [
-                "adam",
-                "addasd"
-            ],
-            "year": "1010",
-            "genre": [
-                "adam"
-            ],
-            "format": [
-                "adsadm"
-            ],
-            "publisher": "adasdas",
-            "info": "adsada"
-        },
-        {
-            "title": "harry",
-            "author": [
-                "adam",
-                "addasd"
-            ],
-            "year": "1010",
-            "genre": [
-                "adam"
-            ],
-            "format": [
-                "adsadm"
+                "inbunden"
             ],
             "publisher": "adasdas",
             "info": "adsada",
-            "id": 7
+            "id": 1
+        },
+        {
+            "title": "Hanna2",
+            "author": [
+                "hanna",
+                "adam"
+            ],
+            "year": "2016",
+            "genre": [
+                "äventyr",
+                "drama",
+                "kattjakt"
+            ],
+            "format": [
+                "inbunden",
+                "ebok",
+                "talbok "
+            ],
+            "publisher": "hej",
+            "info": "fin bok",
+            "id": 2
         }
     ]
 }

@@ -6,5 +6,6 @@ html
     h1 Alla böcker i biblioteket.
     ul
       each book in books
-        li= book.title
+        li
+          a(href='/' + book.id)= book.title
       

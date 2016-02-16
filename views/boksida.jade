@@ -1,0 +1,11 @@
+doctype html
+html
+  title= book.title
+body
+  h1= book.title
+  p= book.author.join(' & ')
+  p= book.year
+  p= book.genre.join(', ')
+  p= book.format.join(', ')
+  p= book.publisher
+  p= book.info

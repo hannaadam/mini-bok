@@ -52,5 +52,10 @@ app.post('/skapabok', function (req, res) {
 app.get('/boklista', function (req, res) {
   res.render(__dirname + '/views/boklista', {books: data.books})
 })
+
+app.get('/:id', function (req, res) {
+  res.render(__dirname + '/views/boksida', {book: data.books[req.params.id]})
+})
+
 app.listen(3000);
 
