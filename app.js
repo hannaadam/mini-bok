@@ -34,6 +34,7 @@ app.post('/skapabok', function (req, res) {
     genre: req.body.genre.split(', '),
     format: req.body.format.split(', '),
     publisher: req.body.publisher,
+    language: req.body.language.split(', '),
     info: req.body.info,
     id: data.books.length
   } 
