@@ -2,7 +2,14 @@ var express = require('express');
 var app = express();
 // BodyParser reads and format the data from the post request.
 var bodyParser = require('body-parser');
+var fs = require('fs');
+var pathData = __dirname + '/data/data.json'
+var data;
 
+fs.readFile(pathData, 'utf8', function (err, text) {
+  if (err) throw err; 
+  data = JSON.parse(text);
+})
 // Urlencoded turns the querystring to readable data.
 app.use(bodyParser.urlencoded({
   extended: true
@@ -19,11 +26,27 @@ app.get('/', function (req, res) {
 })
 
 // On post we get the data from the user
-// TODO Store the data in data/data.json
 // TODO Return a confimation that the data is stored.
 // TODO Clear the form
 app.post('/skapabok', function (req, res) {
-  console.log(req.body)
+  var newBook = {
+    title: req.body.title,
+    author: req.body.author.split(', '),
+    year: req.body.year,
+    genre: req.body.genre.split(', '),
+    format: req.body.format.split(', '),
+    publisher: req.body.publisher,
+    info: req.body.info
+  } 
+  console.log(newBook);
+  data.books.push(newBook);
+  console.log(data);
+  fs.writeFile(pathData, JSON.stringify(data, null, 4), function (err) {
+    if (err) throw err;
+    res.render(__dirname + '/views/skapabok')
+    console.log('Book was added', data);
+  })
 })
 
 app.listen(3000);
+
