@@ -36,7 +36,8 @@ app.post('/skapabok', function (req, res) {
     genre: req.body.genre.split(', '),
     format: req.body.format.split(', '),
     publisher: req.body.publisher,
-    info: req.body.info
+    info: req.body.info,
+    id: data.books.length
   } 
   console.log(newBook);
   data.books.push(newBook);
@@ -48,5 +49,8 @@ app.post('/skapabok', function (req, res) {
   })
 })
 
+app.get('/boklista', function (req, res) {
+  res.render(__dirname + '/views/boklista', {books: data.books})
+})
 app.listen(3000);
 
