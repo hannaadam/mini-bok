@@ -26,8 +26,6 @@ app.get('/', function (req, res) {
 })
 
 // On post we get the data from the user
-// TODO Return a confimation that the data is stored.
-// TODO Clear the form
 app.post('/skapabok', function (req, res) {
   var newBook = {
     title: req.body.title,
