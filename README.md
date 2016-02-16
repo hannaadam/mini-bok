@@ -24,4 +24,9 @@ Express
 
 Nodemon
 
-
+TODO jade layout header Hanna 
+TODO boksida layout 
+TODO lägga till språk i data Adam
+TODO ändra namn på filer & routs  
+TODO css
+ 
