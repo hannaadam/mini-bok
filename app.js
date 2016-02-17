@@ -32,9 +32,18 @@ app.get('/', function (req, res) {
 })
 
 
-// /skapabok will make 
-app.get('/skapabok', function (req, res) {
-  res.render(__dirname + '/views/skapabok')
+app.get('/skapabok', function (req, res){
+  res.render(__dirname + '/views/login')
+})
+// On root we send the index.jade
+
+app.post('/skapabok', function (req, res) {
+  var checkedUser = data.users.filter(function (user){
+    return user.username == req.body.username && req.body.password;
+  })
+  if (checkedUser.length == 1) {
+    res.render(__dirname + '/views/skapabok')
+  }
 })
 
 
