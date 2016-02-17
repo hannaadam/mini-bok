@@ -25,5 +25,16 @@
             "info": "En ring ska dööö",
             "id": 0
         }
-    ]
+    ],
+    "users":[{
+            "username": "adam", 
+            "password": "123"
+            },
+            {
+
+            "username": "hanna",
+            "password": "456"
+            }
+            ] 
+
 }

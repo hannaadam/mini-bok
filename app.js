@@ -20,9 +20,18 @@ app.use(bodyParser.json());
 // Use Jade as templating engine
 app.set('view engine', 'jade');
 
+app.get('/skapabok', function (req, res){
+  res.render(__dirname + '/views/login')
+})
 // On root we send the index.jade
-app.get('/skapabok', function (req, res) {
-  res.render(__dirname + '/views/skapabok')
+
+app.post('/skapabok', function (req, res) {
+  var checkedUser = data.users.filter(function (user){
+    return user.username == req.body.username && req.body.password;
+  })
+  if (checkedUser.length == 1) {
+    res.render(__dirname + '/views/skapabok')
+  }
 })
 
 // On post we get the data from the user
