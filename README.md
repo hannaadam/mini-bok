@@ -25,9 +25,8 @@ Express
 Nodemon
 
 
-TODO jade layout header Hanna 
-TODO boksida layout 
-TODO lägga till språk i data Adam
-TODO ändra namn på filer & routs  
 TODO css
+TODO 404 & fel login sidor
+TODO layout på boksida för att visa data snyggt
+
  

@@ -62,7 +62,7 @@ app.post('/skapatbok', function (req, res) {
 })
 
 // Dynamic routes that shows the book the user clicked. 
-app.get('/:id', function (req, res) {
+app.get('/book/:id', function (req, res) {
   res.render(__dirname + '/views/boksida', {book: data.books[req.params.id]})
 })
 
