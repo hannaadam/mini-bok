@@ -1,3 +1,29 @@
 {
-    "books": []
+    "books": [
+        {
+            "title": "Sagan om ringen2",
+            "author": [
+                "hanna",
+                "adam"
+            ],
+            "year": "2016",
+            "genre": [
+                "äventyr",
+                "drama",
+                "kattjakt"
+            ],
+            "format": [
+                "inbunden",
+                "ebok",
+                "talbok "
+            ],
+            "publisher": "Bonier",
+            "language": [
+                "svenska",
+                "engelska"
+            ],
+            "info": "En ring ska dööö",
+            "id": 0
+        }
+    ]
 }

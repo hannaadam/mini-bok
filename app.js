@@ -21,12 +21,12 @@ app.use(bodyParser.json());
 app.set('view engine', 'jade');
 
 // On root we send the index.jade
-app.get('/', function (req, res) {
-  res.render(__dirname + '/views/index')
+app.get('/skapabok', function (req, res) {
+  res.render(__dirname + '/views/skapabok')
 })
 
 // On post we get the data from the user
-app.post('/skapabok', function (req, res) {
+app.post('/skapatbok', function (req, res) {
   var newBook = {
     title: req.body.title,
     author: req.body.author.split(', '),
@@ -43,13 +43,13 @@ app.post('/skapabok', function (req, res) {
   console.log(data);
   fs.writeFile(pathData, JSON.stringify(data, null, 4), function (err) {
     if (err) throw err;
-    res.render(__dirname + '/views/skapabok')
+    res.render(__dirname + '/views/skapatbok')
     console.log('Book was added', data);
   })
 })
 
-app.get('/boklista', function (req, res) {
-  res.render(__dirname + '/views/boklista', {books: data.books})
+app.get('/', function (req, res) {
+  res.render(__dirname + '/views/index', {books: data.books})
 })
 
 app.get('/:id', function (req, res) {

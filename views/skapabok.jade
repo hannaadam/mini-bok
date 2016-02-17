@@ -1,9 +1,28 @@
-
-doctype  html
+doctype html
 html(lang="en")
   head
-    title Skapat bok
-
+    title Miniprojekt node
   body
-  	include ./layout/header.jade
-    h1 Du har sparat en bok i biblioteket
+
+    include ../layout/header.jade
+  
+    h1 Minibok 
+    form(action="/skapatbok", method="POST")
+      span.lable Titel
+      input(type="text", name="title") 
+      span.lable Författare 
+      input(type="text", name="author") 
+      span.lable År
+      input(type="text", name="year") 
+      span.lable Gengre 
+      input(type="text", name="genre") 
+      span.lable Format 
+      input(type="text", name="format") 
+      span.lable Förlag 
+      input(type="text", name="publisher") 
+      span.lable Språk
+      input(type="text", name="language")
+      span.lable Info
+      input(type="text", name="info") 
+      button Skapa bok 
+

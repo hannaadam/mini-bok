@@ -1,25 +1,15 @@
 doctype html
-html(lang="en")
+html
   head
-    title Miniprojekt node
+    title Lista över böcker
   body
+
     include ../layout/header.jade
-    h1 Minibok 
-    form(action="/skapabok", method="POST")
-      span.lable Titel
-      input(type="text", name="title") 
-      span.lable Författare 
-      input(type="text", name="author") 
-      span.lable År
-      input(type="text", name="year") 
-      span.lable Gengre 
-      input(type="text", name="genre") 
-      span.lable Format 
-      input(type="text", name="format") 
-      span.lable Förlag 
-      input(type="text", name="publisher") 
-      span.lable Språk
-      input(type="text", name="language")
-      span.lable Info
-      input(type="text", name="info") 
-      button Skapa bok 
+ 
+    h1 Alla böcker i biblioteket.
+    ul
+      each book in books
+        li
+          a(href='/' + book.id)= book.title
+      
+
