@@ -10,15 +10,27 @@ fs.readFile(pathData, 'utf8', function (err, text) {
   if (err) throw err; 
   data = JSON.parse(text);
 })
+
+
 // Urlencoded turns the querystring to readable data.
 app.use(bodyParser.urlencoded({
   extended: true
 }));
+
+
 // bodyparser.json turns thata in too JSON data.
 app.use(bodyParser.json());
 
+
 // Use Jade as templating engine
 app.set('view engine', 'jade');
+
+
+// Get the index on the root route
+app.get('/', function (req, res) {
+  res.render(__dirname + '/views/index', {books: data.books})
+})
+
 
 app.get('/skapabok', function (req, res){
   res.render(__dirname + '/views/login')
@@ -33,6 +45,7 @@ app.post('/skapabok', function (req, res) {
     res.render(__dirname + '/views/skapabok')
   }
 })
+
 
 // On post we get the data from the user
 app.post('/skapatbok', function (req, res) {
@@ -57,13 +70,9 @@ app.post('/skapatbok', function (req, res) {
   })
 })
 
-app.get('/', function (req, res) {
-  res.render(__dirname + '/views/index', {books: data.books})
-})
-
-app.get('/:id', function (req, res) {
+// Dynamic routes that shows the book the user clicked. 
+app.get('/book/:id', function (req, res) {
   res.render(__dirname + '/views/boksida', {book: data.books[req.params.id]})
 })
 
 app.listen(3000);
-
