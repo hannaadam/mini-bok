@@ -2,6 +2,7 @@ doctype html
 html
   title= book.title
 body
+  include ../layout/header.jade
   h1= book.title
   p= book.author.join(' & ')
   p= book.year

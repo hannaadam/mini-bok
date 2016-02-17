@@ -3,6 +3,9 @@ html(lang="en")
   head
     title Miniprojekt node
   body
+
+    include ../layout/header.jade
+  
     h1 Minibok 
     form(action="/skapatbok", method="POST")
       span.lable Titel
@@ -22,3 +25,4 @@ html(lang="en")
       span.lable Info
       input(type="text", name="info") 
       button Skapa bok 
+
