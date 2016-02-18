@@ -2,27 +2,37 @@ doctype html
 html(lang="en")
   head
     title Miniprojekt node
+    include ../layout/bootstrap.jade
   body
 
     include ../layout/header.jade
   
     h1 Minibok 
     form(action="/skapatbok", method="POST")
-      span.lable Titel
-      input(type="text", name="title") 
-      span.lable Författare 
-      input(type="text", name="author") 
-      span.lable År
-      input(type="text", name="year") 
-      span.lable Gengre 
-      input(type="text", name="genre") 
-      span.lable Format 
-      input(type="text", name="format") 
-      span.lable Förlag 
-      input(type="text", name="publisher") 
-      span.lable Språk
-      input(type="text", name="language")
-      span.lable Info
-      input(type="text", name="info") 
-      button Skapa bok 
+      div
+        lable(for="title") Titel:
+        input(type="text", id="title" name="title") 
+      div
+        lable(for="author") Författare:
+        input(type="text", id="author", name="author") 
+      div
+        lable(for="year") År:
+        input(type="text", id="year", name="year") 
+      div
+        lable(for="genre") Genre:
+        input(type="text", id="genre", name="genre") 
+      div
+        lable(for="format") Format: 
+        input(type="text",id="format", name="format") 
+      div
+        lable(for="publisher") Förlag: 
+        input(type="text",id="publisher", name="publisher") 
+      div
+        lable(for="language") Språk: 
+        input(type="text",id="language", name="language")
+      div
+        lable(for="info") Info: 
+        textarea(id="info") 
+      div.button
+        button(type="submit") Skapa bok 
 
