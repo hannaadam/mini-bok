@@ -1,0 +1,16 @@
+1. Vi har inte använt oss av express generatorn då vi ville bygga från grunden och förstå all kod. Vi har inte använt oss av våra moduler men skulle kunna göra det om vi väljer att dela upp våran kod. I dagsläget ligger all vår kod i app.js. Vi hade kunnat använda oss av en middleware i vår login function men valde ett annat upplägg. Vi vet att det handlar om att byta ut den anonyma funtionen mot en namnad, som i sin tur kan återanvändas.
+
+Vi tycker att vi har en bra struktur på vår kod, den är tydlig och översiktlig. Det vi kan utveckla är att dela upp vår kod i app.js för att den ska kunna växa över tid.
+(eller inte växa och bli för lång)
+
+2. Vi har inget i vår kod idag som vi tycker passar bättre i frontend.
+
+3. Genom att modulesera app.js kan vi göra den skalbar och därefter lägga till nya funktioner. 
+
+4. I dag är koden inte lätt att återanvända men den vissa delar (login, readFile och skapabok) kan göras om till namngivna funktioner som går att dela och återanvändas och göras mer allmänna.
+
+5. Funktionen som gör att man kan klicka på en genre och få upp alla böcker som ingår i samma genre. Samma sak gäller för tex författare, språk och format.
+
+6. Vi har gjort all kod i hop och har parprogrammerat allt, därför har vi kunnat diskutera all kod och få full förståelse för den. 
+
+7. Det har fungerat toppen. Det har känts effektivt och vi har snabbt kommit fram till en lösning. Som första projekt var det bra att kunna ta del av alla delar och tekniker. 
