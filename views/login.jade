@@ -2,14 +2,14 @@ doctype html
 html(lang="en")
 head
  title Login  
-
+ include ../layout/bootstrap.jade
 body
-  div.loginform
+  div.container
     h1 Logga in
     form(action="/skapabok" method="post" id='loginform')
       input(type="username" name="username" id="uname" placeholder="Användarnamn")
       input(type="password" name="password" id ="pword" placeholder="Lösenord")
-      input(type="submit" class="btn btn-primary btn-block btn-blocklarge" value="Logga in")
+      input(type="submit" class="btn btn-primary btn-block" value="Logga in")
       label(class="remember")
     
     

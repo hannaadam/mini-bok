@@ -11,6 +11,7 @@ fs.readFile(pathData, 'utf8', function (err, text) {
   data = JSON.parse(text);
 })
 
+app.use(express.static('public'));
 
 // Urlencoded turns the querystring to readable data.
 app.use(bodyParser.urlencoded({
@@ -73,6 +74,10 @@ app.post('/skapatbok', function (req, res) {
 // Dynamic routes that shows the book the user clicked. 
 app.get('/book/:id', function (req, res) {
   res.render(__dirname + '/views/boksida', {book: data.books[req.params.id]})
+})
+
+app.get('*', function (req, res) {
+  res.render(__dirname + '/views/404')
 })
 
 app.listen(3000);
