@@ -1,4 +1,9 @@
-form {
+h1, ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+  form {
   margin: 0 auto;
   width: 40vw;
   padding: 1em;
