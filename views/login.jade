@@ -7,9 +7,10 @@ body
   div.container
     h1 Logga in
     form(action="/skapabok" method="post" id='loginform')
-      input(type="username" name="username" id="uname" placeholder="Användarnamn")
-      input(type="password" name="password" id ="pword" placeholder="Lösenord")
-      input(type="submit" class="btn btn-primary btn-block" value="Logga in")
-      label(class="remember")
-    
+      div
+        input(type="username" name="username" id="uname" placeholder="Användarnamn")
+      div
+        input(type="password" name="password" id ="pword" placeholder="Lösenord")
+      div
+        button(type="submit") Logga in 
     
