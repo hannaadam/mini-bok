@@ -4,11 +4,13 @@ html
   include ../layout/bootstrap.jade
 body
   include ../layout/header.jade
-  h1= book.title
-  p= book.author.join(' & ')
-  p= book.year
-  p= book.genre.join(', ')
-  p= book.format.join(', ')
-  p= book.publisher
-  p= book.language.join(', ')
-  p= book.info
+  div.bookcontainer 
+    div.bookinfo
+      h1= book.title
+      p Av: #{book.author.join(' & ')}
+      p År: #{book.year}
+      p Genre: #{book.genre.join(', ')}
+      p Format: #{book.format.join(', ')}
+      p Förlag: #{book.publisher}
+      p Språk: #{book.language.join(', ')}
+      p Info: #{book.info}

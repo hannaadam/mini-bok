@@ -1,8 +1,14 @@
+/* H1 and Header*/
 h1, ul {
   text-align: center;
+  padding: 0px;
   list-style-type: none;
 }
 
+li {
+  display: inline;
+  padding: 20px
+}
 
 /* Form syles */
 form {
@@ -85,3 +91,16 @@ button:active {
   position:relative;
   top:1px;
 } 
+
+/* Boksida */
+
+.bookcontainer {
+  text-align: center;
+}
+
+.bookinfo {
+  margin: 0 auto;
+  width: 30%;
+  text-align: left;
+}
+
