@@ -59,7 +59,7 @@ app.post('/skapatbok', function (req, res) {
     publisher: req.body.publisher,
     language: req.body.language.split(', '),
     info: req.body.info,
-    id: data.books.length
+    id: Date.now()
   } 
   console.log(newBook);
   data.books.push(newBook);
@@ -73,7 +73,8 @@ app.post('/skapatbok', function (req, res) {
 
 // Dynamic routes that shows the book the user clicked. 
 app.get('/book/:id', function (req, res) {
-  res.render(__dirname + '/views/boksida', {book: data.books[req.params.id]})
+  console.log(data.books.find( (book) => book.id == req.params.id ));
+  res.render(__dirname + '/views/boksida', {book: data.books.find( (book) => book.id == req.params.id) })
 })
 
 app.get('*', function (req, res) {
