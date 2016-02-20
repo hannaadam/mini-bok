@@ -24,9 +24,7 @@ Express
 
 Nodemon
 
-
-TODO css
-TODO 404 & fel login sidor
+TODO fel login sidor
 TODO layout på boksida för att visa data snyggt
 
  
