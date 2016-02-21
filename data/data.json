@@ -66,6 +66,74 @@
                 "engelska"
             ],
             "id": 1455920589069
+        },
+        {
+            "title": "Sagan om ringen2",
+            "author": [
+                "adam"
+            ],
+            "year": "2016",
+            "genre": [
+                "äventyr",
+                "drama",
+                "kattjakt"
+            ],
+            "format": [
+                "inbunden",
+                "ebok",
+                "talbok "
+            ],
+            "publisher": "Bonier",
+            "language": [
+                "svenska",
+                "engelska"
+            ],
+            "id": 1456087119309
+        },
+        {
+            "title": "Sagan om ringen2",
+            "author": [
+                "adam"
+            ],
+            "year": "2016",
+            "genre": [
+                "äventyr",
+                "drama",
+                "kattjakt"
+            ],
+            "format": [
+                "inbunden",
+                "ebok",
+                "talbok "
+            ],
+            "publisher": "Bonier1",
+            "language": [
+                "svenska",
+                "engelska"
+            ],
+            "id": 1456087142728
+        },
+        {
+            "title": "Sagan om ringen2",
+            "author": [
+                "adam"
+            ],
+            "year": "1010",
+            "genre": [
+                "äventyr",
+                "drama",
+                "kattjakt"
+            ],
+            "format": [
+                "pdf"
+            ],
+            "publisher": "Bonier",
+            "language": [
+                "svenska",
+                "engelska"
+            ],
+            "info": "HHhaaaaaj",
+            "id": 1456087267605
         }
     ],
     "users": [
