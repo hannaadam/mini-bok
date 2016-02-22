@@ -8,9 +8,9 @@ body
     h1 Logga in
     form(action="/skapabok" method="post" id='loginform')
       div
-        input(type="username" name="username" id="uname" placeholder="Användarnamn")
+        input(type="username" name="username" id="uname" placeholder="Användarnamn" required)
       div
-        input(type="password" name="password" id ="pword" placeholder="Lösenord")
+        input(type="password" name="password" id ="pword" placeholder="Lösenord" required)
       div
         button(type="submit") Logga in 
     

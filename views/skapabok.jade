@@ -11,28 +11,28 @@ html(lang="en")
     form(action="/skapatbok", method="POST")
       div
         lable(for="title") Titel:
-        input(type="text", id="title" name="title") 
+        input(type="text", id="title" name="title" required) 
       div
         lable(for="author") Författare:
-        input(type="text", id="author", name="author") 
+        input(type="text", id="author", name="author" required) 
       div
         lable(for="year") År:
-        input(type="text", id="year", name="year") 
+        input(type="text", id="year", name="year" required) 
       div
         lable(for="genre") Genre:
-        input(type="text", id="genre", name="genre") 
+        input(type="text", id="genre", name="genre" required) 
       div
         lable(for="format") Format: 
-        input(type="text",id="format", name="format") 
+        input(type="text",id="format", name="format" required) 
       div
         lable(for="publisher") Förlag: 
-        input(type="text",id="publisher", name="publisher") 
+        input(type="text",id="publisher", name="publisher" required) 
       div
         lable(for="language") Språk: 
-        input(type="text",id="language", name="language")
+        input(type="text",id="language", name="language" required)
       div
         lable(for="info") Info: 
-        textarea(id="info", name="info") 
+        textarea(id="info", name="info" required) 
       div.button
         button(type="submit") Skapa bok 
 
