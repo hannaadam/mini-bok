@@ -44,10 +44,12 @@ app.get('/skapabok', function (req, res){
 // Authenticate the passed in username and password. If there is a user serv the skapabok form.
 app.post('/skapabok', function (req, res) {
   var checkedUser = data.users.filter(function (user){
-    return user.username == req.body.username && req.body.password;
+    return user.username == req.body.username && req.body.password == user.password;
   })
   if (checkedUser.length == 1) {
     res.render(__dirname + '/views/skapabok')
+  } else {
+    res.render(__dirname + '/views/fellogin')
   }
 })
 

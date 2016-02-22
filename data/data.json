@@ -134,6 +134,31 @@
             ],
             "info": "HHhaaaaaj",
             "id": 1456087267605
+        },
+        {
+            "title": "Sagan om ringen2",
+            "author": [
+                "hanna",
+                "adam"
+            ],
+            "year": "2016",
+            "genre": [
+                "äventyr",
+                "drama",
+                "kattjakt"
+            ],
+            "format": [
+                "inbunden",
+                "ebok",
+                "talbok "
+            ],
+            "publisher": "Bonier",
+            "language": [
+                "svenska",
+                "engelska"
+            ],
+            "info": " ",
+            "id": 1456128290303
         }
     ],
     "users": [
